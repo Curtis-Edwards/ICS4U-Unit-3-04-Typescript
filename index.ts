@@ -20,13 +20,8 @@ function hanoi(ndisks: number, startPeg: number, endPeg: number) {
 
 console.log("Towers of Hanoi program\n")
 const numberOfDisksString = createPrompt("How many disks would you like in your tower (1->):  ")
-const numberOfDisks = numberOfDisksString.value
-if (isNaN(parseInt(numberOfDisksString))) {
-  console.log("Invalid input.")
-} else {
-  const nDisks  = parseInt(numberOfDisks)
-  hanoi(nDisks, 1, 3)
-}
+const numberOfDisks = parseInt(numberOfDisksString.value)
+hanoi(numberOfDisks, 1, 3)
 
 console.log("Invalid input.")
 
