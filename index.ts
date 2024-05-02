@@ -23,7 +23,7 @@ const numberOfDisksString = createPrompt("How many disks would you like in your 
 const numberOfDisks = parseInt(numberOfDisksString.value)
 hanoi(numberOfDisks, 1, 3)
 
-console.log("Invalid input.")
+console.log("\nDone.")
 
 
       
